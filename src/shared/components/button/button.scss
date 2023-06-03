@@ -1,0 +1,31 @@
+.custom-button {
+  background: #db321c;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+  height: 62px;
+
+  font-family: "Tenor Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #f5f5f5;
+
+  &.empty {
+    background: #b69c9900;
+    border: 1px solid #db321c;
+    color: #db321c;
+
+    &.to-top {
+      background: #b69c9900;
+      border: 1px solid #7C7C7A;
+      color: #7C7C7A;
+    }
+
+    &:hover {
+      background: #db321c20;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "variables";
+
+@layer base {
+  * {
+    font-family: "Tenor Sans", sans-serif;
+  }
+  body {
+    min-height: 100vh;
+  }
+  input:active {
+    border: 0px solid #f00 !important;
+    outline: none !important;
+  }
+  input:focus {
+    border: 0px solid #f00 !important;
+    outline: none !important;
+  }
+  h2 {
+    font-family: "Tenor Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 120%;
+    color: #252522;
+  }
+  h3 {
+    font-family: "Tenor Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    color: #252522;
+  }
+  h5 {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #7c7c7a;
+  }
+  p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    color: #252522;
+  }
+
+  /* scrollbar */
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 8px;
+    background-color: #1e1e1e;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #2e2e2e;
+    border-radius: 9em;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #3e3e3e;
+  }
+
+  .border-custom {
+    border: $main-border;
+  }
+  .bl-0 {
+    border-left: 0;
+  }
+  .br-0 {
+    border-right: 0;
+  }
+  .bx-0 {
+    border-left: 0;
+    border-right: 0;
+  }
+  .bt-0 {
+    border-top: 0;
+  }
+  .bb-0 {
+    border-bottom: 0;
+  }
+  .by-0 {
+    border-top: 0;
+    border-bottom: 0;
+  }
+
+  .bg-darker {
+    background-color: $bg-darker;
+  }
+}

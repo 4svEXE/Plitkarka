@@ -1,0 +1,29 @@
+@import "../../variables";
+
+#TrainingProgram {
+  border: $main-border;
+  border-left: 0;
+  border-right: 0;
+
+  .custom-image {
+    position: relative;
+    background-size: cover;
+
+    img {
+      position: absolute;
+      left: 90px;
+      top: 60px;
+      width: 100px;
+      max-width: auto;
+
+      background-color: #000;
+      padding: 10px;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: #f00;
+        transform: scale(1.3);
+      }
+    }
+  }
+}

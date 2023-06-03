@@ -1,0 +1,75 @@
+input[type="checkbox"] {
+  display: none;
+}
+label img {
+  transition: 0.3s;
+  cursor: pointer;
+}
+input[type="checkbox"]:checked ~ label img {
+  transform: rotate(45deg);
+}
+
+.Item-list .ditails-text {
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+input[type="checkbox"]:checked ~ .Item-list .ditails-text {
+  height: 100%;
+}
+
+#AnswersItem {
+  transition: 0.3s;
+
+  span {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #7c7c7a;
+  }
+  .Item-list {
+    h3 {
+      font-family: "Manrope";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 120%;
+      color: #2b2b28;
+    }
+    p {
+      font-family: "Manrope";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 120%;
+      color: #ababab;
+    }
+    .ditails-text {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 150%;
+      color: #2b2b28;
+
+      h5 {
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        color: #7c7c7a;
+      }
+
+      span {
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 150%;
+        color: #2b2b28;
+      }
+    }
+  }
+}

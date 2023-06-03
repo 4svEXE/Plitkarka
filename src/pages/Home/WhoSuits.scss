@@ -1,0 +1,40 @@
+@import "../../variables";
+
+#WhoSuits {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 24px;
+  gap: 40px;
+
+  background: #efefef;
+
+  .WhoSuits-item {
+    border-top: $main-border;
+  }
+
+  b {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #6f6f6d;
+  }
+  strong {
+    font-family: "Tenor Sans";
+    font-style: normal;
+    font-weight: 400;
+
+    line-height: 120%;
+    color: #252522;
+  }
+  p {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    color: #252522;
+  }
+}

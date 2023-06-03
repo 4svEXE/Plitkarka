@@ -1,0 +1,72 @@
+@import "../../variables";
+
+.FirstScreen {
+  @include mainBorder();
+  border-right: 0px;
+
+  .custom-border {
+    @include mainBorder();
+
+    .border-only-bottom {
+      border-top: 0px;
+      border-right: 0px;
+    }
+    .border-b-r {
+      border-top: 0px;
+    }
+  }
+
+  .box-for-screen {
+    border-top: 0;
+  }
+
+  div {
+    h1 {
+      font-family: "Tenor Sans";
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+
+      color: #2b2b28;
+    }
+    span {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+
+      color: #7c7c7a;
+    }
+    strong {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 150%;
+
+      color: #2b2b28;
+    }
+    p {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 150%;
+
+      color: #2b2b28;
+
+      img {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+.first-screen-banner {
+  .banner {
+    max-width: fit-content;
+  }
+  .banner-logo {
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 50%;
+  }
+}
